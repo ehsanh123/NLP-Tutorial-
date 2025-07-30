@@ -26,3 +26,4 @@ text = "Hello, how are you?"
 inputs = tokenizer(text, return_tensors="pt", padding=True)
 translated = model.generate(**inputs)
 print(tokenizer.decode(translated[0], skip_special_tokens=True))
+1
